@@ -1,0 +1,17 @@
+html{
+    background-color: lightgray;
+}
+h1{
+    font-family: Helvetica;
+    font-size: 30px;
+    color: black;
+}
+h2,h3,h4{
+    font-family: Verdana;
+    font-size: 15px;
+    color: black;
+}
+p{
+    font-family: Verdana;
+    color: black;
+}
