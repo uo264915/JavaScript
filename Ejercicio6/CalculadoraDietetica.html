@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Dietetica</title>
+    <meta name="author" content="Aitor Llanos - Irazola"/>
+    <meta name="description" content="Ejercicio 4 de sesion 1 de EcmaScript"/>
+    <link rel="stylesheet" type="text/css" href="CalculadoraDietetica.css"/>
+    <script src="CalculadoraDietetica.js"></script>
+</head>
+<body>
+<header>
+    <h1>Calculadora Dietetica</h1>
+</header>
+<main>
+    <section>
+        <h2>""</h2>
+        <p>
+            <input type="text" id="pantalla" value="0"/>
+        </p>
+        <p>
+            <input type="button" class="memoria" value="mrc" onclick="calculadora.showMemory()"/>
+            <input type="button" class="memoria" value="m-" onclick="calculadora.minusMemory()"/>
+            <input type="button" class="memoria" value="m+" onclick="calculadora.addMemory()"/>
+        </p>
+        <p>
+            <input type="button" class="comida" value="Pollo" onclick="calculadora.pollo()"/>
+            <input type="button" class="comida" value="Filete de carne" onclick="calculadora.fileteCarne()"/>
+            <input type="button" class="comida" value="Jamon" onclick="calculadora.jamon()"/>
+            <input type="button" class="comida" value="Pan" onclick="calculadora.pan()"/>
+            <input type="button" class="comida" value="Leche" onclick="calculadora.leche()"/>
+        </p>
+        <p>
+            <input type="button" class="comida" value="Verdura" onclick="calculadora.verdura()"/>
+            <input type="button" class="comida" value="Pescado" onclick="calculadora.pescado()"/>
+            <input type="button" class="comida" value="Queso" onclick="calculadora.queso()"/>
+            <input type="button" class="comida" value="Patata" onclick="calculadora.patata()"/>
+            <input type="button" class="comida" value="Tomate" onclick="calculadora.tomate()"/>
+        </p>
+        <p>
+            <input type="button" class="comida" value="Legumbres" onclick="calculadora.legumbres()"/>
+            <input type="button" class="deporte" value="Nadar 20 min" onclick="calculadora.nadar()"/>
+            <input type="button" class="deporte" value="Correr 20 min" onclick="calculadora.correr()"/>
+            <input type="button" class="deporte" value="Andar en bici 30 min" onclick="calculadora.bici()"/>
+            <input type="button" class="operation" value="÷" onclick="calculadora.operationAdd('/')"/>
+        </p>
+        <p>
+            <input type="button" class="comida" value="Chocolate" onclick="calculadora.chocolate()"/>
+            <input type="button" class="numero" value="7" onclick="calculadora.display('7')"/>
+            <input type="button" class="numero" value="8" onclick="calculadora.display('8')"/>
+            <input type="button" class="numero" value="9" onclick="calculadora.display('9')"/>
+            <input type="button" class="operation" value="*" onclick="calculadora.operationAdd('*')"/>
+        </p>
+        <p>
+            <input type="button" class="comida" value="Arroz" onclick="calculadora.arroz()"/>
+            <input type="button" class="numero" value="4" onclick="calculadora.display('4')"/>
+            <input type="button" class="numero" value="5" onclick="calculadora.display('5')"/>
+            <input type="button" class="numero" value="6" onclick="calculadora.display('6')"/>
+            <input type="button" class="operation" value="-" onclick="calculadora.operationAdd('-')"/>
+        </p>
+        <p>
+            <input type="button" class="comida" value="Pasta" onclick="calculadora.pasta()"/>
+            <input type="button" class="numero" value="1" onclick="calculadora.display('1')"/>
+            <input type="button" class="numero" value="2" onclick="calculadora.display('2')"/>
+            <input type="button" class="numero" value="3" onclick="calculadora.display('3')"/>
+            <input type="button" class="operation" value="+" onclick="calculadora.operationAdd('+')"/>
+        </p>
+        <p>
+            <input type="button" class="operation" value="(" onclick="calculadora.display('(')"/>
+            <input type="button" class="operation" value=")" onclick="calculadora.display(')')"/>
+            <input type="button" class="numero" value="0" onclick="calculadora.display('0')"/>
+            <input type="button" class="numero" value="." onclick="calculadora.display('.')"/>
+            <input type="button" class="operation" value="=" onclick="calculadora.enter()"/>
+        </p>
+    </section>
+</main>
+
+</body>
+</html>
