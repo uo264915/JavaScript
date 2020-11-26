@@ -1,0 +1,54 @@
+/* Especificidad = 001 */
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Especificidad = 001 */
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 10em;
+    min-height: 100%;
+    font-family: Verdana;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Especificidad = 001 */
+main {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+/* Especificidad = 001 */
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: darkblue;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 50px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Especificidad = 001 */
+form {
+    margin: 5% auto 0;
+    width: 75%;
+    padding: 2.5%;
+    background-color: red;
+
+}
+
+/* Especificidad = 002 */
+form input {
+    color: white;
+    background-color: #000C90;
+}
