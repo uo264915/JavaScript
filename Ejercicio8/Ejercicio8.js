@@ -1,7 +1,7 @@
 "use strict";
 class Meteo {
     constructor(){
-        this.apikey = "c1fd90ee0f3543a5738c9e07fd41d2db";
+        this.apikey = "c48d2b53c0781711e0e5199308348ccb";
         this.ciudad = "Oviedo";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
