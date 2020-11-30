@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 13 Tarea 2</title>
+    <meta name="description" content="Ejercicio 13 Tarea 2">
+    <meta name="author" content="Pablo Urones Clavera">
+    <link rel="stylesheet" type="text/css" href="MapaGeoJSON.css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=c48d2b53c0781711e0e5199308348ccb"></script>
+</head>
+<body>
+<header>
+    <h1>Mapa GeoJSON</h1>
+</header>
+<main>
+    <section id="control">
+        <p>
+            <label for="files"></label>
+            <input type="file" id="files" onchange="mapa.init();">
+        </p>
+    </section>
+    <section id="map"></section>
+</main>
+<script src="MapaGeoJSON.js"></script>
+</body>
+</html>
