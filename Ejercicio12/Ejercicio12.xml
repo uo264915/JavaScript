@@ -1,0 +1,155 @@
+<?xml version= "1.0" encoding = "UTF-8"?>
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
+<rutas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.w3.org/2001/XMLSchema tarea5.xsd">
+	<ruta dificultad="fácil" personas="excluir recién nacidos">
+        <nombre>Vuelo a Sevilla</nombre>
+        <tipo>Mixta tapas y monumentos</tipo>
+        <duracion>01:25:00</duracion>
+        <agencia>Iberia</agencia>
+        <descripcion>Consiste en coger un vuelo desde Asturias,España hasta Sevilla,España</descripcion>
+        <inicio>Aeropuerto de Asturias</inicio>
+        <direccion>Sur</direccion>
+        <coordenadasInicio>Latitud: N43°33'49", Longitud: O6°02'05", Altitud: 126 m</coordenadasInicio>
+        <referencias>
+            <referencia>http://www.aena.es/es/pasajeros/pasajeros.html</referencia>
+			<referencia>https://www.turismoasturias.es/</referencia>
+			<referencia>https://www.sevilla.org/</referencia>
+        </referencias>
+        <recomendacion>7/10</recomendacion>
+         <hitos>
+            <hito>
+                <nombreHito>León</nombreHito>
+                <descripcionHito>Ciudad de León situada en el norte de España</descripcionHito>
+                <coordenadas>Latitud: N42°36'0.1", Longitud: O5°34'13", Altitud: 837 m</coordenadas>
+                <distancia>120 km</distancia>
+                <tiempo>00:15:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/leon.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombreHito>Parque Regional Sierra de Gredos</nombreHito>
+                <descripcionHito>Parque Regional en la Sierra de Gredos situado en el centro de España, en la provincia de Ávila </descripcionHito>
+                <coordenadas>Latitud: N40°15'00", Longitud: O5°13'00", Altitud: de 400m a 2592 m</coordenadas>
+                <distancia>250 km</distancia>
+                <tiempo>00:25:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/gredos.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombreHito>Sevilla</nombreHito>
+                <descripcionHito>Ciudad de Sevilla situada en el sur de España</descripcionHito>
+                <coordenadas>Latitud: N37°22'58.19", Longitud: O5°58'23.41", Altitud: 7 m</coordenadas>
+                <distancia>300 km</distancia>
+                <tiempo>00:40:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/sevilla.jpg</foto>
+                </fotos>
+            </hito>
+         </hitos>
+    </ruta>
+	
+	
+	<ruta dificultad="media" personas="excluir personas mayores de 70 años y niños menores de 8 años">
+        <nombre>Vuelo a Venecia</nombre>
+        <tipo>Turística</tipo>
+        <duracion>02:20:00</duracion>
+        <agencia>Iberia</agencia>
+        <descripcion>Consiste en coger un vuelo desde Madrid,España hasta Venecia,Italia</descripcion>
+        <inicio>Aeropuerto de Barajas, Madrid</inicio>
+        <direccion>Este</direccion>
+        <coordenadasInicio>Latitud: N40°29'30.52", Longitud: O3°34'10.13, Altitud: 610 m</coordenadasInicio>
+        <referencias>
+            <referencia>https://www.aeropuertomadrid-barajas.com/</referencia>
+			<referencia>https://www.madrid.es/portal/site/munimadrid</referencia>
+			<referencia>https://viajes.nationalgeographic.com.es/c/venecia</referencia>
+        </referencias>
+        <recomendacion>9/10</recomendacion>
+         <hitos>
+            <hito>
+                <nombreHito>Pico Aneto, España</nombreHito>
+                <descripcionHito>Incleíbles vistas del Pico Aneto situado en los Pirineos</descripcionHito>
+                <coordenadas>Latitud: N42°37'49.98", Longitud: E0°39'24.7", Altitud: 3404 m</coordenadas>
+                <distancia>420 km</distancia>
+                <tiempo>00:45:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/aneto.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombreHito>Montpellier, Francia</nombreHito>
+                <descripcionHito>Ciudad de Montpellier situada en el sur de Francia</descripcionHito>
+                <coordenadas>Latitud: N43°36'39.31", Longitud: E3°52'38.03", Altitud: 56 m</coordenadas>
+                <distancia>260 km</distancia>
+                <tiempo>00:25:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/montpellier.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombreHito>Venecia, Italia</nombreHito>
+                <descripcionHito>Ciudad de Venecia situada en el norte de Italia y en el mar Adriático</descripcionHito>
+                <coordenadas>Latitud: N45°26'13.67", Longitud: E12°19'57.54", Altitud: 2 m</coordenadas>
+                <distancia>700 km</distancia>
+                <tiempo>01:10:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/venecia.jpg</foto>
+                </fotos>
+            </hito>
+         </hitos>
+    </ruta>
+	
+	
+	<ruta dificultad="alta" personas="excluir a personas mayores y jovénes menores de edad">
+        <nombre>Vuelo a Moscú</nombre>
+        <tipo>Turística</tipo>
+        <duracion>07:00:00</duracion>
+        <agencia>Aeroflot</agencia>
+        <descripcion>Consiste en coger un vuelo desde Barcelona,España hasta Moscú,Rusia</descripcion>
+        <inicio>Aeropuerto Josep Tarradellas-El Prat, Barcelona</inicio>
+        <direccion>Noreste</direccion>
+        <coordenadasInicio>Latitud: N41°17'49", Longitud: E2°04'42", Altitud: 4 m</coordenadasInicio>
+        <referencias>
+            <referencia>https://www.aeropuertobarcelona-elprat.com/home.html</referencia>
+			<referencia>https://www.disfrutabarcelona.com/informacion-general</referencia>
+			<referencia>https://viajes.nationalgeographic.com.es/c/moscu</referencia>
+        </referencias>
+        <recomendacion>8/10</recomendacion>
+         <hitos>
+            <hito>
+                <nombreHito>Turín, Italia</nombreHito>
+                <descripcionHito>Ciudad de Turín situada en el norte de Italia</descripcionHito>
+                <coordenadas>Latitud: N45°4'13.76", Longitud: E7°41'12.55", Altitud: 239 m</coordenadas>
+                <distancia>620 km</distancia>
+                <tiempo>01:20:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/turin.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombreHito>Baránovichi, Bielorrusia</nombreHito>
+                <descripcionHito>Ciudad de Baránovichi situada en el occidente de Bielorrusia</descripcionHito>
+                <coordenadas>Latitud: N53°07'57", Longitud: E26°00'50", Altitud: 193 m</coordenadas>
+                <distancia>1600 km</distancia>
+                <tiempo>03:50:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/baranovichi.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombreHito>Moscú, Rusia</nombreHito>
+                <descripcionHito>Ciudad de Moscú, capital de Rusia, situada en el oeste de Rusia</descripcionHito>
+                <coordenadas>Latitud: N55°45'8", Longitud: E37°37'2", Altitud: 156 m</coordenadas>
+                <distancia>800 km</distancia>
+                <tiempo>01:50:00</tiempo>
+                <fotos>
+                    <foto>/multimedia/rusia.jpg</foto>
+                </fotos>
+            </hito>
+         </hitos>
+    </ruta>
+
+</rutas>
+

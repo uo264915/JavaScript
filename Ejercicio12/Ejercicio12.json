@@ -1,0 +1,152 @@
+{
+  "rutas": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xsi:schemaLocation": "http://www.w3.org/2001/XMLSchema tarea5.xsd",
+    "ruta": [
+      {
+        "-dificultad": "fácil",
+        "-personas": "excluir recién nacidos",
+        "nombre": "Vuelo a Sevilla",
+        "tipo": "Mixta tapas y monumentos",
+        "duracion": "01:25:00",
+        "agencia": "Iberia",
+        "descripcion": "Consiste en coger un vuelo desde Asturias,España hasta Sevilla,España",
+        "inicio": "Aeropuerto de Asturias",
+        "direccion": "Sur",
+        "coordenadasInicio": "Latitud: N43°33'49\", Longitud: O6°02'05\", Altitud: 126 m",
+        "referencias": {
+          "referencia": [
+            "http://www.aena.es/es/pasajeros/pasajeros.html",
+            "https://www.turismoasturias.es/",
+            "https://www.sevilla.org/"
+          ]
+        },
+        "recomendacion": "7/10",
+        "hitos": {
+          "hito": [
+            {
+              "nombreHito": "León",
+              "descripcionHito": "Ciudad de León situada en el norte de España",
+              "coordenadas": "Latitud: N42°36'0.1\", Longitud: O5°34'13\", Altitud: 837 m",
+              "distancia": "120 km",
+              "tiempo": "00:15:00",
+              "fotos": { "foto": "/multimedia/leon.jpg" }
+            },
+            {
+              "nombreHito": "Parque Regional Sierra de Gredos",
+              "descripcionHito": "Parque Regional en la Sierra de Gredos situado en el centro de España, en la provincia de Ávila ",
+              "coordenadas": "Latitud: N40°15'00\", Longitud: O5°13'00\", Altitud: de 400m a 2592 m",
+              "distancia": "250 km",
+              "tiempo": "00:25:00",
+              "fotos": { "foto": "/multimedia/gredos.jpg" }
+            },
+            {
+              "nombreHito": "Sevilla",
+              "descripcionHito": "Ciudad de Sevilla situada en el sur de España",
+              "coordenadas": "Latitud: N37°22'58.19\", Longitud: O5°58'23.41\", Altitud: 7 m",
+              "distancia": "300 km",
+              "tiempo": "00:40:00",
+              "fotos": { "foto": "/multimedia/sevilla.jpg" }
+            }
+          ]
+        }
+      },
+      {
+        "-dificultad": "media",
+        "-personas": "excluir personas mayores de 70 años y niños menores de 8 años",
+        "nombre": "Vuelo a Venecia",
+        "tipo": "Turística",
+        "duracion": "02:20:00",
+        "agencia": "Iberia",
+        "descripcion": "Consiste en coger un vuelo desde Madrid,España hasta Venecia,Italia",
+        "inicio": "Aeropuerto de Barajas, Madrid",
+        "direccion": "Este",
+        "coordenadasInicio": "Latitud: N40°29'30.52\", Longitud: O3°34'10.13, Altitud: 610 m",
+        "referencias": {
+          "referencia": [
+            "https://www.aeropuertomadrid-barajas.com/",
+            "https://www.madrid.es/portal/site/munimadrid",
+            "https://viajes.nationalgeographic.com.es/c/venecia"
+          ]
+        },
+        "recomendacion": "9/10",
+        "hitos": {
+          "hito": [
+            {
+              "nombreHito": "Pico Aneto, España",
+              "descripcionHito": "Incleíbles vistas del Pico Aneto situado en los Pirineos",
+              "coordenadas": "Latitud: N42°37'49.98\", Longitud: E0°39'24.7\", Altitud: 3404 m",
+              "distancia": "420 km",
+              "tiempo": "00:45:00",
+              "fotos": { "foto": "/multimedia/aneto.jpg" }
+            },
+            {
+              "nombreHito": "Montpellier, Francia",
+              "descripcionHito": "Ciudad de Montpellier situada en el sur de Francia",
+              "coordenadas": "Latitud: N43°36'39.31\", Longitud: E3°52'38.03\", Altitud: 56 m",
+              "distancia": "260 km",
+              "tiempo": "00:25:00",
+              "fotos": { "foto": "/multimedia/montpellier.jpg" }
+            },
+            {
+              "nombreHito": "Venecia, Italia",
+              "descripcionHito": "Ciudad de Venecia situada en el norte de Italia y en el mar Adriático",
+              "coordenadas": "Latitud: N45°26'13.67\", Longitud: E12°19'57.54\", Altitud: 2 m",
+              "distancia": "700 km",
+              "tiempo": "01:10:00",
+              "fotos": { "foto": "/multimedia/venecia.jpg" }
+            }
+          ]
+        }
+      },
+      {
+        "-dificultad": "alta",
+        "-personas": "excluir a personas mayores y jovénes menores de edad",
+        "nombre": "Vuelo a Moscú",
+        "tipo": "Turística",
+        "duracion": "07:00:00",
+        "agencia": "Aeroflot",
+        "descripcion": "Consiste en coger un vuelo desde Barcelona,España hasta Moscú,Rusia",
+        "inicio": "Aeropuerto Josep Tarradellas-El Prat, Barcelona",
+        "direccion": "Noreste",
+        "coordenadasInicio": "Latitud: N41°17'49\", Longitud: E2°04'42\", Altitud: 4 m",
+        "referencias": {
+          "referencia": [
+            "https://www.aeropuertobarcelona-elprat.com/home.html",
+            "https://www.disfrutabarcelona.com/informacion-general",
+            "https://viajes.nationalgeographic.com.es/c/moscu"
+          ]
+        },
+        "recomendacion": "8/10",
+        "hitos": {
+          "hito": [
+            {
+              "nombreHito": "Turín, Italia",
+              "descripcionHito": "Ciudad de Turín situada en el norte de Italia",
+              "coordenadas": "Latitud: N45°4'13.76\", Longitud: E7°41'12.55\", Altitud: 239 m",
+              "distancia": "620 km",
+              "tiempo": "01:20:00",
+              "fotos": { "foto": "/multimedia/turin.jpg" }
+            },
+            {
+              "nombreHito": "Baránovichi, Bielorrusia",
+              "descripcionHito": "Ciudad de Baránovichi situada en el occidente de Bielorrusia",
+              "coordenadas": "Latitud: N53°07'57\", Longitud: E26°00'50\", Altitud: 193 m",
+              "distancia": "1600 km",
+              "tiempo": "03:50:00",
+              "fotos": { "foto": "/multimedia/baranovichi.jpg" }
+            },
+            {
+              "nombreHito": "Moscú, Rusia",
+              "descripcionHito": "Ciudad de Moscú, capital de Rusia, situada en el oeste de Rusia",
+              "coordenadas": "Latitud: N55°45'8\", Longitud: E37°37'2\", Altitud: 156 m",
+              "distancia": "800 km",
+              "tiempo": "01:50:00",
+              "fotos": { "foto": "/multimedia/rusia.jpg" }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

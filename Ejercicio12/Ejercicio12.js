@@ -1,44 +1,77 @@
-"use script";
+"use strict";
 
-class Archivo {
-
-    constructor(){
+class ApiFile {
+    constructor() {
+        const header = $('#header');
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            header.append("<h2>Este navegador soporta el API File </h2>");
+        } else {
+            const body = $('#body');
+            body.empty();
+            header.append("<h2>Este navegador soporta el API File </h2>");
+        }
+        this.files = [];
     }
 
-    leerArchivoTexto(files) 
-    { 
-        var archivo = files[0];
-        var nombre = document.getElementById("nombreArchivo");
-        var tamaño = document.getElementById("tamañoArchivo");
-        var tipo = document.getElementById("tipoArchivo");
-        var ultima = document.getElementById("ultimaModificacion");
-        var contenido = document.getElementById("contenidoArchivo");
-        var areaVisualizacion = document.getElementById("areaTexto");
-        var errorArchivo = document.getElementById("errorLectura");
-        nombre.innerText = "Nombre del archivo: " + archivo.name;
-        tamaño.innerText = "Tamaño del archivo: " + archivo.size + " bytes"; 
-        tipo.innerText = "Tipo del archivo: " + archivo.type;
-        ultima.innerText = "Fecha de la última modificación: " + archivo.lastModifiedDate;
-        contenido.innerText="Contenido del archivo de texto:"
-        
-        var tipoTexto = /text.*/;
-        var tipoJSON = /text.json/;
-        var tipoXML = /text.xml/;
-    if (archivo.type.match(tipoTexto) || archivo.type.match(tipoJSON) || archivo.type.match(tipoXML)) 
-       {
-        var lector = new FileReader();
-        lector.onload = function (evento) {
-          //El evento "onload" se lleva a cabo cada vez que se completa con éxito una operación de lectura
-          //La propiedad "result" es donde se almacena el contenido del archivo
-          //Esta propiedad solamente es válida cuando se termina la operación de lectura
-          areaVisualizacion.innerText = lector.result;
-          }      
-        lector.readAsText(archivo);
+    processFiles() {
+        this.files = $('#files')[0].files;
+        $('#resultado').empty();
+        this.showNumberFiles();
+        this.calculateSize();
+        this.showListFiles();
+    }
+
+    showNumberFiles() {
+        $("#resultado").append("<p>Ficheros seleccionados: " + this.files.length + "</p>");
+    }
+
+    calculateSize() {
+        let nBytes = 0;
+        for (let i = 0; i < this.files.length; i++) {
+            nBytes += this.files[i].size;
         }
-    else {
-         errorArchivo.innerText = "Error al cargar el archivo";
-        }       
-};
+        $("#resultado").append("<p>Tamaño total: " + nBytes + " bytes </p>");
+    }
+
+    showListFiles() {
+        let content = '';
+        content += "<h3>Ficheros seleccionados</h3>";
+        content += "<ul id='listFile'>";
+        for (let i = 0; i < this.files.length; i++) {
+            this.showContentFile(this.files[i]);
+        }
+        content += "</ul>";
+        $("#resultado").append(content)
+    }
+
+    showContentFile(file) {
+        const reader = new FileReader();
+        reader.onload = () => {
+            this.showDetailsFile(file, reader.result);
+        };
+        reader.readAsText(file, "UTF-8");
+    }
+
+    showDetailsFile(file, content) {
+        content = this.convertXML(content);
+        let details = "<li>" + file.name;
+        details += "<ul>";
+        details += "<li>Tamaño: " + file.size + " bytes</li>";
+        details += "<li>Tipo: " + file.type + "</li>";
+        details += "<li>Ultima modificacion: " + file.lastModifiedDate + "</li>";
+        details += "<li>Contenido:<pre>" + content + "</pre></li>";
+        details += "</ul>";
+        details += "</li>";
+        $("#listFile").append(details);
+    }
+
+    convertXML(content) {
+        content = String(content).replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+        return content;
+    }
 }
 
-const archivo = new Archivo();
+const apiFile = new ApiFile();
