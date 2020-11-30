@@ -29,7 +29,7 @@ class Calculadora {
             this.memory += eval(display.value);
             this.cleanDisplay();
         } catch (e) {
-            alert('Wrong value, please check it')
+            alert('Valor no valido')
         }
     }
 
@@ -39,7 +39,7 @@ class Calculadora {
             this.memory -= eval(display.value);
             this.cleanDisplay();
         } catch (e) {
-            alert('Wrong value, please check it')
+            alert('Valor no valido')
         }
     }
 
