@@ -64,3 +64,8 @@ section input[type=text] {
     background-color: #364D62;
     color: white;
 }
+
+.operacion{
+    background-color: #c6c7c9;
+    color: black;
+}
