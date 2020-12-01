@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 14</title>
+    <meta name="description" content="Ejercicio 14">
+    <meta name="author" content="Pablo Urones Clavera">
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body onload="loader()">
+<header>
+    <h1>Ejercicio 14</h1>
+</header>
+<main>
+    <h2>Archivo:</h2>
+        <p>
+            <label for="files"></label>
+            <input type="file" id="files" onchange="apiFile.processFiles();" multiple>
+        </p>
+    <h2>Datos meteorológicos</h2>
+    <p>Tiempo
+        <input type="button" value="Cargar Datos" onclick="meteo.verJSON()"/>
+    </p>
+    <canvas id="canvas" width="600" height="500">
+    </canvas>
+    <section id="resultado">
+        <h2>Datos del archivo</h2>
+    </section>
+</main>
+<script src="Ejercicio14.js"></script>
+</body>
+</html>
