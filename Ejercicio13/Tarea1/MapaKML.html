@@ -5,7 +5,7 @@
     <title>Ejercicio 13 Tarea 1</title>
     <meta name="description" content="Ejercicio 13 Tarea 1">
     <meta name="author" content="Pablo Urones Clavera">
-    <link rel="stylesheet" type="text/css" href="MapaKML.css"/>
+    <link href="MapaKML.css" rel="stylesheet"/>
     <script src="https://maps.googleapis.com/maps/api/js?key=c48d2b53c0781711e0e5199308348ccb"></script>
 </head>
 <body>
@@ -13,18 +13,16 @@
     <h1>Mapa KML</h1>
 </header>
 <main>
-    <section>
+    <section id="control">
         <p>
             <label for="files"></label>
-            <input type="file" id="files" onchange="mapa.init();">
+            <input type="file" id="files" onchange="map.init();">
         </p>
     </section>
-    <section id="mapSection">
-        
-        <script src="MapaKML.js"></script>
-    </section>
+    <section id="map"></section>
 </main>
-
+<script src="geoxml3.js"></script>
+<script src="MapaKML.js"></script>
 </body>
 
 </html>

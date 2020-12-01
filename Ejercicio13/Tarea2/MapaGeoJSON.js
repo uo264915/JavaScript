@@ -2,9 +2,12 @@
 
 class MapaGeoJSON {
     
-      init() {
-        const file = document.getElementById('files').files[0];
-        if (file.name.includes('.geojson')) {
+    constructor() {
+    }
+
+    init() {
+        const file = document.getElementById("files").files[0];
+        if (file.name.includes('.geoJSON')) {
             const reader = new FileReader();
             reader.onloadend = () => {
                 const map = new google.maps.Map(document.getElementById('map'), {
@@ -16,9 +19,9 @@ class MapaGeoJSON {
             };
             reader.readAsText(file);
         } else {
-            alert("Error al cargar el archivo");
+            alert("Error: ¡Archivo no válido!");
         }
     }
 }
 
-const mapa = new MapaGeoJSON();
+const map = new MapaGeoJSON();

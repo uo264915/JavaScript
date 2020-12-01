@@ -1,4 +1,5 @@
-"use strict";
+'use strict';
+
 class MapaKML {
     constructor() {
     }
@@ -8,10 +9,10 @@ class MapaKML {
         if (file.name.includes('.kml')) {
             const reader = new FileReader();
             reader.onload = () => {
-                const mapaKML = new google.maps.Map(document.getElementById('mapSection'), {
-                    zoom: 10,
+                const map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
                 });
-                const geoXml = new geoXML3.parser({mapa: mapaKML});
+                const geoXml = new geoXML3.parser({map: map});
                 geoXml.parseKmlString(reader.result);
             };
             reader.readAsText(file);
@@ -21,4 +22,4 @@ class MapaKML {
     }
 }
 
-const mapa = new MapaKML();
+const map = new MapaKML();
